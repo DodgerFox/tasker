@@ -1,0 +1,61 @@
+{
+  "circleA": {
+    "type": "circle",
+    "color": "#f9cece",
+    "size": 60,
+    "posX": 90,
+    "posY": 0,
+    "title": "Task for pink circle",
+    "text": "Nice news for our village"
+  }
+,"circleB": {
+    "type": "circle",
+    "color": "#edf9ce",
+    "size": 30,
+    "posX": 200,
+    "posY": 0,
+    "title": "Task for green circle",
+    "text": "Nice news for our village"
+  }
+,"rectangleA": {
+    "type": "rectangle",
+    "color": "#cef9eb",
+    "width": 60,
+    "height": 60,
+    "posX": 200,
+    "posY": 0,
+    "title": "Task for blue rectangle",
+    "text": "Nice news for our village"
+  }
+,"trapezoidA": {
+    "type": "trapezoid",
+    "color": "#ced4f9",
+    "width": 60,
+    "height": 60,
+    "slope": 1,
+    "posX": 200,
+    "posY": 0,
+    "title": "Task for violet trapezoid",
+    "text": "Nice news for our village"
+  }
+,"polygonA": {
+    "type": "polygon",
+    "color": "wheat",
+    "size": 80,
+    "sides": 5,
+    "posX": 200,
+    "posY": 0,
+    "title": "Task for wheat polygon",
+    "text": "Nice news for our village"
+  }
+,"polygonB": {
+    "type": "polygon",
+    "color": "red",
+    "size": 80,
+    "sides": 5,
+    "posX": 250,
+    "posY": 0,
+    "title": "Task for red polygon",
+    "text": "Nice news for our village"
+  }
+}

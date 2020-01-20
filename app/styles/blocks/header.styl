@@ -1,0 +1,102 @@
+.header
+  position absolute
+  z-index 10
+  left 0
+  right 0
+  top 60px
+  t()
+
+  .wrap
+    display flex
+    justify-content space-between
+    align-items center
+    max-width 2000px
+    padding 0 60px
+    height 100%
+    +to-width(767px)
+      padding 0 20px
+
+  .nav
+    position fixed
+    background wheat
+    width 100%
+    height 100vh
+    left 0
+    right 0
+    top 0
+    bottom 0
+    opacity 0
+    border-radius 50%
+    transform scale(0.1)
+    pointer-events none
+    transition 0.5s all
+
+    &.open
+      opacity 1
+      transform scale(1)
+      border-radius 0
+
+
+  &-gamburger
+    position relative
+    top 0px
+    right 60px
+    cursor pointer
+    width 40px
+    height 26px
+    min-width 24px
+    z-index 3
+    +to-width(767px)
+      right 0px
+    // &:after
+    //   content ''
+    //   position absolute
+    //   width 70px
+    //   height 70px
+    //   border-radius 50%
+    //   background wheat
+    //   z-index -1
+    //   top -18px
+    //   left -5px
+
+    &__item
+      position absolute
+      left 0
+      top 6px
+      height 4px
+      background-color #141414
+      border-radius 3px
+      right 0
+      transition 0.3s all
+      &:nth-child(2)
+        top 15px
+        left 20px
+      &:last-child
+        top 24px
+
+    &:hover
+      cursor pointer
+      .header-gamburger__item
+        background-color #141414
+        &:nth-child(1)
+          right -10px
+          left 10px
+        &:last-child
+          right -10px
+          left 10px
+
+    &.active
+      .header-gamburger__item
+        background-color #141414
+        &:nth-child(1)
+          transform rotate(-45deg)
+          left 0!important
+          right 0!important
+          top 18px
+        &:nth-child(2)
+          transform rotate(45deg)
+          left 0!important
+          right 0!important
+          top 18px
+        &:last-child
+          opacity 0

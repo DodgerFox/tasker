@@ -1,0 +1,50 @@
+.content
+  position fixed
+  left 0
+  right 0
+  top 0
+  bottom 0
+  transform scale(0)
+  background-color #eaeaea
+  transition 0.6s all
+  pointer-events none
+  border-radius 0
+  &.open
+    transform scale(1)
+    pointer-events all
+
+  &-body
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    height 100vh
+
+  &-title
+    font-size 24px
+    padding-bottom 20px
+
+  &-text
+    font-size 16px
+    font-weight 300
+
+.area
+  position fixed
+  left 0
+  right 0
+  top 0
+  bottom 0
+  display flex
+  justify-content center
+  align-items center
+  pointer-events none
+
+  &__circle
+    width 100px
+    height 100px
+    border-radius 50%
+    opacity 0.2
+    background-color #333
+    transition 0.3s all
+    &.open
+      transform scale(1.1)

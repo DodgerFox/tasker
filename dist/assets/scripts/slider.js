@@ -1,0 +1,1 @@
+function functionName(){let n=document.form;console.log(n)}functionName();
